@@ -99,26 +99,32 @@
             // 
             // Sound
             // 
+            Sound.BackColor = Color.Transparent;
             Sound.BackgroundImage = (Image)resources.GetObject("Sound.BackgroundImage");
             Sound.BackgroundImageLayout = ImageLayout.Stretch;
+            Sound.FlatAppearance.BorderColor = Color.DarkSeaGreen;
+            Sound.FlatStyle = FlatStyle.Flat;
             Sound.Location = new Point(670, 511);
             Sound.Margin = new Padding(3, 4, 3, 4);
             Sound.Name = "Sound";
             Sound.Size = new Size(67, 60);
             Sound.TabIndex = 6;
             Sound.Text = "\r\n";
-            Sound.UseVisualStyleBackColor = true;
+            Sound.UseVisualStyleBackColor = false;
             // 
             // Settings
             // 
+            Settings.BackColor = Color.Transparent;
             Settings.BackgroundImage = Properties.Resources.Conf_removebg_preview;
             Settings.BackgroundImageLayout = ImageLayout.Stretch;
+            Settings.FlatAppearance.BorderColor = Color.DarkSeaGreen;
+            Settings.FlatStyle = FlatStyle.Flat;
             Settings.Location = new Point(760, 511);
             Settings.Margin = new Padding(3, 4, 3, 4);
             Settings.Name = "Settings";
-            Settings.Size = new Size(70, 60);
+            Settings.Size = new Size(87, 60);
             Settings.TabIndex = 7;
-            Settings.UseVisualStyleBackColor = true;
+            Settings.UseVisualStyleBackColor = false;
             // 
             // LBLSM
             // 
