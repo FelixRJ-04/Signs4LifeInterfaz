@@ -139,7 +139,7 @@
             Controls.Add(label1);
             Controls.Add(Logo);
             Name = "Form1";
-            Text = "Logo";
+            Text = "Traductor de LSM";
             ((System.ComponentModel.ISupportInitialize)Logo).EndInit();
             ResumeLayout(false);
             PerformLayout();
