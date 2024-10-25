@@ -4,7 +4,7 @@ namespace Signs4Life
     {
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent(GetSettings());
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

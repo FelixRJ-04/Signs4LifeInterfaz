@@ -20,13 +20,18 @@
             base.Dispose(disposing);
         }
 
+        private Button GetSettings()
+        {
+            return Settings;
+        }
+
         #region Windows Form Designer generated code
 
         /// <summary>
         ///  Required method for Designer support - do not modify
         ///  the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        private void InitializeComponent(Button settings)
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             Logo = new PictureBox();
@@ -99,7 +104,10 @@
             Sound.BackColor = Color.Transparent;
             Sound.BackgroundImage = (Image)resources.GetObject("Sound.BackgroundImage");
             Sound.BackgroundImageLayout = ImageLayout.Stretch;
-            Sound.Location = new Point(586, 383);
+            Sound.FlatAppearance.BorderColor = Color.DarkSeaGreen;
+            Sound.FlatStyle = FlatStyle.Flat;
+            Sound.Location = new Point(670, 511);
+            Sound.Margin = new Padding(3, 4, 3, 4);
             Sound.Name = "Sound";
             Sound.Padding = new Padding(10, 2, 2, 10);
             Sound.Size = new Size(59, 45);
@@ -112,8 +120,8 @@
             Settings.BackColor = Color.Transparent;
             Settings.BackgroundImage = Properties.Resources.Conf_removebg_preview;
             Settings.BackgroundImageLayout = ImageLayout.Stretch;
-            Settings.Location = new Point(665, 383);
-            Settings.Name = "Settings";
+            settings.Location = new Point(665, 383);
+            NewMethod();
             Settings.Size = new Size(61, 45);
             Settings.TabIndex = 7;
             Settings.UseVisualStyleBackColor = false;
@@ -148,6 +156,11 @@
             ((System.ComponentModel.ISupportInitialize)Logo).EndInit();
             ResumeLayout(false);
             PerformLayout();
+        }
+
+        private void NewMethod()
+        {
+            Settings.Name = "Settings";
         }
 
         #endregion
