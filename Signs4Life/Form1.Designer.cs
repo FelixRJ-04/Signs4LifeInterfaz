@@ -152,7 +152,7 @@
             Controls.Add(Logo);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
-            Text = "Traductor de LSM";
+            Text = "1";
             ((System.ComponentModel.ISupportInitialize)Logo).EndInit();
             ResumeLayout(false);
             PerformLayout();
